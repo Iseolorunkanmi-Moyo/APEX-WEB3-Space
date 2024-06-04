@@ -1,0 +1,254 @@
+*{
+    --maincolor1:#050505;
+    --maincolor2:#BDBDBD;
+    --maincolor3:#7C7C7C;
+    --maincolor4:#212529;
+    --maincolor5:#9B9B9B;
+    --maincolor6:rgba(33, 37, 41, 0.75);
+    --maincolor7:#747474;
+    --bs-gray: #6c757d;
+
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+
+    --faintblack1: rgba(0, 0, 0, 0.1);
+    --faintblack2: rgba(0, 0, 0, 0.2);
+    --faintblack3: rgba(0, 0, 0, 0.3);
+    --faintblack4: rgba(0, 0, 0, 0.4);
+    --faintblack5: rgba(0, 0, 0, 0.5);
+    --faintblack6: rgba(0, 0, 0, 0.6);
+    --faintblack7: rgba(0, 0, 0, 0.7);
+    --faintblack8: rgba(0, 0, 0, 0.8);
+    --faintblack9: rgba(0, 0, 0, 0.9);
+    --faintblack10:rgba(0, 0, 0, 1);
+
+    --faintwhite1: rgba(255, 255, 255, 0.1);
+    --faintwhite2: rgba(255, 255, 255, 0.2);
+    --faintwhite3: rgba(255, 255, 255, 0.3);
+    --faintwhite4: rgba(255, 255, 255, 0.4);
+    --faintwhite5: rgba(255, 255, 255, 0.5);
+    --faintwhite6: rgba(255, 255, 255, 0.6);
+    --faintwhite7: rgba(255, 255, 255, 0.7);
+    --faintwhite8: rgba(255, 255, 255, 0.8);
+    --faintwhite9: rgba(255, 255, 255, 0.9);
+    --faintwhite10: rgba(255, 255, 255, 1);
+
+    --font-family:  Inter, sans-serif;
+}
+
+@media screen and (max-width: 1044px) {
+    body{
+        background-color:var(--bs-gray-dark) ;
+        padding: 0px;
+        font-family: Space Mono,monospace;
+        margin: 0px;
+     }
+    
+     nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between  ;
+        background-color: var(--maincolor1);
+        height: 50px;
+     }
+    
+     .logoDiv{
+        
+     }
+
+     .logo{
+        height: 70px;
+     }  
+
+     .navSecondDiv{
+        display: none;
+     }
+     
+    .navLinksDiv{
+        display: flex;
+        gap: 20px;
+        
+    }
+
+    .navLinksDiv>a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .navLinksDiv>a:hover{
+        text-decoration: underline;
+    }
+
+    .connectAccountDiv{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-right: 10px;
+        flex-direction: row-reverse;
+        margin-top: -4px;
+    }
+
+    .menuBtnDiv{
+        display: flex;
+    }
+
+    .menuBtnDiv{
+        height: 40px ;
+        width:40px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px var(--faintwhite4);
+    }
+
+    .menuBtn{
+        height: 30px ;
+        width:30px;
+        filter: invert(100%);
+        box-shadow:0px 4px 0px 0px var(--faintwhite6);
+    }
+
+    .menuBtn{
+        height: 40px ;
+        width:40px;
+    }
+
+    .connectAccount{
+        height: 40px;
+        width: 90px;
+        font-size: 13px;
+        font-weight: 500;
+        /* border-radius: 8px; */
+        border: none;
+        gap: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        background-color: white;
+        box-shadow:0px 3px 0px 0px var(--faintwhite6);
+    }
+
+    .connectAccount:active{
+        transition: 200ms ease-in-out;
+        transform: translateY(3px);
+        box-shadow:0px 0px 0px 0px var(--faintwhite6);
+
+    }
+
+    .connectAccount>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .connectAccountImg{
+        height: 15px;
+    }
+
+     .card{
+        height: 100px;
+        width: 70px;
+        background-color: var(--maincolor6);       
+    }
+
+}
+
+
+@media screen and (min-width: 1044px) {
+    body{
+        background-color:var(--bs-gray-dark) ;
+        padding: 0px;
+        font-family: Space Mono,monospace;
+        margin: 0px;
+     }
+    
+     nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between  ;
+        background-color: var(--maincolor1);
+        height: 70px;
+     }
+    
+     .logoDiv{
+        
+     }
+
+     .logo{
+        height: 125px;
+     }  
+     
+    .navLinksDiv{
+        display: flex;
+        gap: 20px;
+        
+    }
+
+    .navLinksDiv>a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .navLinksDiv>a:hover{
+        text-decoration: underline;
+    }
+
+    .connectAccountDiv{
+        display: flex;
+        gap: 8px;
+        margin-right: 20px;
+    }
+
+    .menuBtnDiv{
+        display: none;
+    }
+
+    .connectAccount{
+        height: 40px;
+        width: 110px;
+        font-size: 15px;
+        font-weight: 500;
+        /* border-radius: 8px; */
+        border: none;
+        gap: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        background-color: white;
+        box-shadow:0px 4px 0px 0px var(--faintwhite6);
+
+    }
+
+    .connectAccount:hover{
+        transition: 100ms ease-in-out;
+        transform: translateY(4px);
+        box-shadow:0px 0px 0px 0px var(--faintwhite6);
+
+    }
+
+    .connectAccount>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .connectAccountImg{
+        height: 25px;
+    }
+
+     .card{
+        height: 100px;
+        width: 70px;
+ background-color: var(--maincolor6);       
+     }
+}
+ 
