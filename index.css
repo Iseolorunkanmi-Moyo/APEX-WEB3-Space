@@ -1,11 +1,11 @@
-*{
-    --maincolor1:#050505;
-    --maincolor2:#BDBDBD;
-    --maincolor3:#7C7C7C;
-    --maincolor4:#212529;
-    --maincolor5:#9B9B9B;
-    --maincolor6:rgba(33, 37, 41, 0.75);
-    --maincolor7:#747474;
+* {
+    --maincolor1: #050505;
+    --maincolor2: #BDBDBD;
+    --maincolor3: #7C7C7C;
+    --maincolor4: #212529;
+    --maincolor5: #9B9B9B;
+    --maincolor6: rgba(33, 37, 41, 0.75);
+    --maincolor7: #747474;
     --bs-gray: #6c757d;
 
     --bs-gray-dark: #343a40;
@@ -28,7 +28,7 @@
     --faintblack7: rgba(0, 0, 0, 0.7);
     --faintblack8: rgba(0, 0, 0, 0.8);
     --faintblack9: rgba(0, 0, 0, 0.9);
-    --faintblack10:rgba(0, 0, 0, 1);
+    --faintblack10: rgba(0, 0, 0, 1);
 
     --faintwhite1: rgba(255, 255, 255, 0.1);
     --faintwhite2: rgba(255, 255, 255, 0.2);
@@ -41,74 +41,76 @@
     --faintwhite9: rgba(255, 255, 255, 0.9);
     --faintwhite10: rgba(255, 255, 255, 1);
 
-    --font-family:  Inter, sans-serif;
+    --font-family: Inter, sans-serif;
 }
 
 @media screen and (max-width: 1044px) {
-    body{
-        background-color:var(--bs-gray-dark) ;
+    body {
+        background-color: var(--bs-gray-900);
         padding: 0px;
-        font-family: Space Mono,monospace;
+        font-family: Space Mono, monospace;
         margin: 0px;
-     }
-    
-     nav{
+    }
+
+    nav {
         display: flex;
         align-items: center;
-        justify-content: space-between  ;
+        justify-content: space-between;
         background-color: var(--maincolor1);
         height: 50px;
-     }
-    
-     .logoDiv{
-        
-     }
+        width: 100%;
+    }
 
-     .logo{
+    .logoDiv {}
+
+    .logo {
         height: 70px;
-     }  
+    }
 
-     .navSecondDiv{
+    .navSecondDiv {
         position: absolute;
         top: 50px;
         left: 0px;
         height: calc(100vh - 50px);
         width: 100%;
-        padding-top:20px ;
+        padding-top: 20px;
         background-color: var(--faintblack5);
         z-index: 40;
         display: none;
-     }
-     
-    .navLinksDiv{
+    }
+
+    .navLinksDiv {
         display: flex;
         gap: 20px;
         flex-direction: column;
     }
 
-    .navLinksDiv>a{
+    .navLinksDiv>a {
         color: white;
         text-decoration: none;
         padding-left: 10px;
-        
+
     }
 
-    .navLinksDiv>a>div{
+    .navLinksDiv>a>div {
         padding-top: 5px;
         padding-bottom: 5px;
     }
 
-    .navLinksDiv>a:active{
+    .navLinksDiv>a:active {
         text-decoration: underline;
     }
 
-    main{
-        display: flex;
-        gap: 10px;
-        /* filter: blur(5px); */
+    main {
+        /* display: flex; */
+        /* width: 100%; */
     }
 
-    .connectAccountDiv{
+    #pointsDiv{
+        display: none;
+    }
+
+    .connectAccountDiv {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -117,13 +119,13 @@
         margin-top: -4px;
     }
 
-    .menuBtnDiv{
+    .menuBtnDiv {
         display: flex;
     }
 
-    .menuBtnDiv{
-        height: 40px ;
-        width:40px;
+    .menuBtnDiv {
+        height: 40px;
+        width: 40px;
         background: transparent;
         display: flex;
         justify-content: center;
@@ -131,19 +133,19 @@
         border: solid 1px var(--faintwhite4);
     }
 
-    .menuBtn{
-        height: 30px ;
-        width:30px;
+    .menuBtn {
+        height: 30px;
+        width: 30px;
         filter: invert(100%);
-        box-shadow:0px 4px 0px 0px var(--faintwhite6);
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
     }
 
-    .menuBtn{
-        height: 40px ;
-        width:40px;
+    .menuBtn {
+        height: 40px;
+        width: 40px;
     }
 
-    .connectAccount{
+    .connectAccount {
         height: 40px;
         width: 90px;
         font-size: 13px;
@@ -155,85 +157,121 @@
         padding-right: 10px;
         cursor: pointer;
         background-color: white;
-        box-shadow:0px 3px 0px 0px var(--faintwhite6);
+        box-shadow: 0px 3px 0px 0px var(--faintwhite6);
     }
 
-    .connectAccount:active{
+    .connectAccount:active {
         transition: 200ms ease-in-out;
         transform: translateY(3px);
-        box-shadow:0px 0px 0px 0px var(--faintwhite6);
+        box-shadow: 0px 0px 0px 0px var(--faintwhite6);
 
     }
 
-    .connectAccount>div{
+    .connectAccount>div {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .connectAccountImg{
+    .connectAccountImg {
         height: 15px;
     }
 
-     .card{
+    .card {
         height: 100px;
         width: 70px;
-        background-color: var(--maincolor6);       
+        background-color: var(--maincolor6);
+    }
+
+    .sections {
+        height: calc(100vh -70px);
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #home {
+        justify-content: space-around;
+    }
+
+    .home-image>img {
+        width: 100%;
+        /* height: 100px; */
+    }
+
+    .homeContent {
+        color: white;
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+        text-shadow: 2px 4px var(--bs-gray-700);
+    }
+
+    #tokenomics {
+        display: none;
+    }
+
+    #earnPoints {
+        display: none;
+    }
+
+    #contact {
+        display: none;
     }
 
 }
 
 
 @media screen and (min-width: 1044px) {
-    body{
-        background-color:var(--bs-gray-dark) ;
+    body {
+        background-color: var(--bs-gray-900);
         padding: 0px;
-        font-family: Space Mono,monospace;
+        font-family: Space Mono, monospace;
         margin: 0px;
-     }
-    
-     nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between  ;
-        background-color: var(--maincolor1);
-        height: 70px;
-     }
-    
-     .logoDiv{
-        
-     }
-
-     .logo{
-        height: 125px;
-     }  
-     
-    .navLinksDiv{
-        display: flex;
-        gap: 20px;
-        
     }
 
-    .navLinksDiv>a{
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--maincolor1);
+        height: 70px;
+    }
+
+    .logoDiv {}
+
+    .logo {
+        height: 125px;
+    }
+
+    .navLinksDiv {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .navLinksDiv>a {
         color: white;
         text-decoration: none;
     }
 
-    .navLinksDiv>a:hover{
+    .navLinksDiv>a:hover {
         text-decoration: underline;
     }
 
-    .connectAccountDiv{
+    .connectAccountDiv {
         display: flex;
         gap: 8px;
         margin-right: 20px;
     }
 
-    .menuBtnDiv{
+    .menuBtnDiv {
         display: none;
     }
 
-    .connectAccount{
+    .connectAccount {
         height: 40px;
         width: 110px;
         font-size: 15px;
@@ -245,31 +283,60 @@
         padding-right: 10px;
         cursor: pointer;
         background-color: white;
-        box-shadow:0px 4px 0px 0px var(--faintwhite6);
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
 
     }
 
-    .connectAccount:hover{
+    .connectAccount:hover {
         transition: 100ms ease-in-out;
         transform: translateY(4px);
-        box-shadow:0px 0px 0px 0px var(--faintwhite6);
+        box-shadow: 0px 0px 0px 0px var(--faintwhite6);
 
     }
 
-    .connectAccount>div{
+    .connectAccount>div {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .connectAccountImg{
+    .connectAccountImg {
         height: 25px;
     }
 
-     .card{
+    .card {
         height: 100px;
         width: 70px;
- background-color: var(--maincolor6);       
-     }
+        background-color: var(--maincolor6);
+    }
+
+    main {
+        height: calc(100vh - 70px);
+    }
+
+    .sections {
+        height: calc(100%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .homeContent {
+        color: white;
+        font-size: 40px;
+        text-shadow: 2px 4px var(--bs-gray-700);
+    }
+
+    #tokenomics {
+        display: none;
+    }
+
+    #earnPoints {
+        display: none;
+    }
+
+    #contact {
+        display: none;
+    }
+
 }
- 
