@@ -44,6 +44,8 @@
     --font-family: Inter, sans-serif;
 }
 
+
+
 @media screen and (max-width: 1044px) {
     body {
         background-color: var(--bs-gray-900);
@@ -81,23 +83,28 @@
 
     .navLinksDiv {
         display: flex;
+        width: 100%;
         gap: 20px;
         flex-direction: column;
     }
 
-    .navLinksDiv>a {
+    .navLinksDiv>button {
         color: white;
         text-decoration: none;
         padding-left: 10px;
-
+        background: transparent;
+        border: none;
+        width: 100%;
     }
 
-    .navLinksDiv>a>div {
+    .navLinksDiv>button>div {
         padding-top: 5px;
-        padding-bottom: 5px;
+        width: 50%;
+        text-align: left;
+        padding-bottom: 10px;
     }
 
-    .navLinksDiv>a:active {
+    .navLinksDiv>button:active {
         text-decoration: underline;
     }
 
@@ -177,19 +184,22 @@
         height: 15px;
     }
 
-    .card {
-        height: 100px;
-        width: 70px;
-        background-color: var(--maincolor6);
-    }
-
     .sections {
         height: calc(100vh -70px);
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
+    }
+    .sectionHeader {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
     }
 
     .sectionDiv {
@@ -197,6 +207,7 @@
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        height: calc(100% - 40px);
     }
 
     #home {
@@ -216,6 +227,36 @@
         text-align: center;
         text-shadow: 2px 2px var(--bs-gray-700);
     }
+
+    .rightHomeArrow{
+        height: 15px;
+    }
+
+    .homeButtonDiv{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }   
+
+    .homeButton{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        height: 30px;
+        border: none;
+        background-color: white;
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+    }
+
+    .homeButton:active{
+        box-shadow: 0px 0px 0px 0px var(--faintwhite6);
+        transform: translateY(4px);
+        transition: 50ms;
+    }
+
+    
 
     #tokenomics {
         display: none;
@@ -246,11 +287,110 @@
         padding: 5px 5px;
     }
 
-    .sectionDiv {}
+    .sectionDiv {
+
+    }
 
     #earnPoints {
+       display:none;
+    }
+
+    .sectionHeader{
         display: none;
     }
+
+      
+    .sectionDiv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 950px;
+        height: calc(100% - 40px);
+        gap: 10px;
+    }
+
+    .pointsDiv{
+        height: 40px;   
+        width: 80%;
+        background-color: var(--faintwhite10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+    }
+    
+
+    .tasksMainDiv{
+        height: calc(100% - 80px);
+        border: solid 2px var(--faintwhite10);
+        width: calc(80% - 23px);
+        padding:10px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        scroll-behavior: smooth;    
+    }
+
+      ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        /* border-radius: 10px !important; */
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e6e6e6;
+        border-left: 1px solid transparent;
+        /* border-radius: 10px !important; */
+      }
+      ::-webkit-scrollbar {
+        width: 7px;
+        scroll-behavior: smooth !important;
+      }
+    
+    .taskDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bs-gray-dark);
+        border-radius: 10px;
+        padding: 10px;
+        width: calc(100% -20px);
+    }
+
+
+    .taskhead{
+        font-size: 16px;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .taskLink{
+        text-decoration: none;   
+    }
+
+    .taskBtn{
+        height: 40px;   
+        width:100px;
+        display: flex;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        border: none    ;
+        background-color: white;
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+    }
+
+    .taskBtn:active{
+        box-shadow: 0px 0px 0px 0px var(--faintwhite6);
+        transform: translateY(4px);
+        transition: 100ms;
+    }
+
 
     #contact {
         display: none;
@@ -287,13 +427,18 @@
 
     }
 
-    .navLinksDiv>a {
+    .navLinksDiv>button {
         color: white;
         text-decoration: none;
+        border: none;
+        background: transparent;
+        font-size: 16px;
+        
     }
 
-    .navLinksDiv>a:hover {
+    .navLinksDiv>button:hover {
         text-decoration: underline;
+        text-underline-offset: 3px;
     }
 
     .connectAccountDiv {
@@ -359,7 +504,7 @@
     .sectionHeader {
         background-color: white;
         width: 100%;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         height: 40px;
@@ -373,16 +518,55 @@
         text-align: center;
     }
 
+    #home{
+        display: flex;
+    }
 
     .homeContent {
         color: white;
         font-size: 40px;
         text-shadow: 2px 4px var(--bs-gray-700);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* align-items: center; */
     }
+
+    .rightHomeArrow{
+        height: 15px;
+    }
+
+    .homeButtonDiv{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 250px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }   
+
+    .homeButton{
+        
+        align-items: center;
+        gap: 5px;
+        height: 30px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        border: none;
+        background-color: white;
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+    }
+
+    .homeButton:active{
+        box-shadow: 0px 0px 0px 0px var(--faintwhite6);
+        transform: translateY(4px);
+        transition: 50ms;
+    }
+
 
     #tokenomics {
         display: none;
-        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
@@ -426,12 +610,115 @@
         height: calc(100% - 40px);
     }
 
+  
+
     #earnPoints {
+        
         display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .sectionDiv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+        max-width: 950px;
+        height: calc(100% - 40px);
+        gap: 10px;
+    }
+
+    .pointsDiv{
+        height: 50px;   
+        width: 504px;
+        background-color: var(--faintwhite10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+    }
+    
+
+    .tasksMainDiv{
+        height: calc(100% - 60px);
+        border: solid 2px var(--faintwhite10);
+        width: 480px;
+        /* border-radius: 10px; */
+        padding:10px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        scroll-behavior: smooth;    
+    }
+
+      ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        /* border-radius: 10px !important; */
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e6e6e6;
+        border-left: 1px solid transparent;
+        /* border-radius: 10px !important; */
+      }
+      ::-webkit-scrollbar {
+        width: 7px;
+        scroll-behavior: smooth !important;
+      }
+    
+    .taskDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bs-gray-dark);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+    .taskhead{
+        font-size: 20px;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .taskLink{
+        text-decoration: none;   
+    }
+
+    .taskBtn{
+        height: 40px;   
+        width: 120px;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        align-items: center;
+        border: none    ;
+        background-color: white;
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+    }
+
+    .taskBtn:hover{
+        box-shadow: 0px 0px 0px 0px var(--faintwhite6);
+        transform: translateY(4px);
+        transition: 100ms;
     }
 
     #contact {
         display: none;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
     }
 
 }

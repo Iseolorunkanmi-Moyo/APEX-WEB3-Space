@@ -63,6 +63,19 @@ tokenomicsLink.addEventListener("click", () => {
     } 
 })
 
+function openEarnPoints(){
+    homeSection.style.display = "none"
+    tokenomicsSection.style.display = "none"
+    earnPointsSection.style.display = "flex"
+    contactSection.style.display = "none"
+    var WIDTH_LIMIT = 1044;
+    var windowWidth = window.innerWidth;
+   
+    if(windowWidth <= WIDTH_LIMIT) {
+        closeMenu()
+    } 
+}
+
 var earnPointsLink = document.getElementById("earnPointsLink")
 var earnPointsSection  = document.getElementById("earnPoints")
 
