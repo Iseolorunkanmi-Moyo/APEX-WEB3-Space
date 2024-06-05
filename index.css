@@ -106,7 +106,7 @@
         /* width: 100%; */
     }
 
-    #pointsDiv{
+    #pointsDiv {
         display: none;
     }
 
@@ -192,7 +192,15 @@
         flex-direction: column;
     }
 
+    .sectionDiv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
     #home {
+        display: flex;
         justify-content: space-around;
     }
 
@@ -212,6 +220,33 @@
     #tokenomics {
         display: none;
     }
+
+    .pieChartDiv {}
+
+    .pieChartDiv>img {
+        width: 100%;
+    }
+
+    .tokenomicsDiv {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 10px; */
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+        background-color: white;
+        padding: 10px 20px;
+    }
+
+    .tokenomicsDiv>div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 5px;
+    }
+
+    .sectionDiv {}
 
     #earnPoints {
         display: none;
@@ -321,6 +356,24 @@
         align-items: center;
     }
 
+    .sectionHeader {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+
+    }
+
+    .sectionHeader>h1 {
+        font-size: 40px;
+        width: 50%;
+        text-align: center;
+    }
+
+
     .homeContent {
         color: white;
         font-size: 40px;
@@ -329,6 +382,48 @@
 
     #tokenomics {
         display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+    }
+
+    .pieChartDiv {
+        width: 100%;
+    }
+
+    .pieChartDiv>img {
+        width: 100%;
+    }
+
+    .tokenomicsDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 10px; */
+        box-shadow: 0px 4px 0px 0px var(--faintwhite6);
+        background-color: white;
+        padding: 10px 20px;
+    }
+
+    .tokenomicsDiv>div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 5px;
+    }
+
+    .sectionDiv {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        max-width: 950px;
+        height: calc(100% - 40px);
     }
 
     #earnPoints {

@@ -89,6 +89,8 @@ contactLink.addEventListener("click", () => {
     contactSection.style.display = "flex"
     var WIDTH_LIMIT = 1044;
     var windowWidth = window.innerWidth;
+    
+    
    
     if(windowWidth <= WIDTH_LIMIT) {
         closeMenu()
